@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhvani's Portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><a href="#">Dhvani</a></div>
+    <div class="nav-group">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" data-name="Home">Home</a></li>
+        <li><a href="#about" data-name="About">About</a></li>
+        <li><a href="#skills" data-name="Skills">Skills</a></li>
+        <li><a href="#portfolio" data-name="Portfolio">Portfolio</a></li>
+        <li><a href="#contact" data-name="Contact">Contact</a></li>
+      </ul>
+      <div id="customAlert"></div>
+      <div class="nav-icons">
+        <div id="msgIcon">💬</div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </div>
+    </div>
+  </nav>
+  <div class="msg-box" id="msgBox">
+    <h3>Messages</h3>
+    <ul id="messageList"></ul>
+  </div>
+</header>
+
+<!-- Home Section -->
+
+<section class="home" id="home">
+  <div class="home-content"> 
+    <div class="home-text">
+      <h1>Hi, I'm Dhvani</h1>
+      <h2>Frontend Developer</h2>
+      <p>I create modern, responsive websites with clean and efficient code.</p>
+      <br>
+      <a href="#portfolio" class="btn">View Projects</a>
+    </div>
+    <div class="home-image">
+      <img src="assets/image/home.avif" alt="Dhvani Image" />
+    </div>
+  </div>
+  <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z"></path>
+    </defs>
+    <g class="wave1"><use xlink:href="#wave-path" x="50" y="3"/></g>
+    <g class="wave2"><use xlink:href="#wave-path" x="50" y="0"/></g>
+    <g class="wave3"><use xlink:href="#wave-path" x="50" y="9"/></g>
+  </svg>
+</section>
+<!-- About Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-wrapper">
+    <div class="about-img">
+      <img src="assets/image/Dhvani.jfif" alt="Dhvani Deshmukh">
+    </div>
+    <div class="about-text">
+      <p>
+        Hey there! I'm <strong>Dhvani Deshmukh</strong>, a passionate <strong>Frontend Developer</strong> who loves turning ideas into beautiful, responsive, and user-friendly websites.
+        With hands-on experience in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> — plus some backend magic using <strong>PHP</strong> and <strong>Laravel</strong> — I enjoy building web experiences that not only look great but also work seamlessly.
+      </p>
+      <p>
+        Whether it's creating smooth animations, clean layouts, or solving real-world problems through code, I'm all about crafting digital solutions that make an impact.
+        I'm constantly learning, growing, and excited to collaborate on creative projects.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><i class="fab fa-html5"></i><span>HTML5</span></div>
+    <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+    <div class="skill-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+    <div class="skill-card"><i class="fas fa-code"></i><span>jQuery</span></div>
+    <div class="skill-card"><i class="fab fa-php"></i><span>PHP</span></div>
+    <div class="skill-card"><i class="fas fa-project-diagram"></i><span>Laravel</span></div>
+    <div class="skill-card"><i class="fas fa-database"></i><span>MySQL</span></div>
+  </div>
+</section>
+
+
+<!-- Portfolio -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio-grid">
+    <div class="project-card">
+      <h3>App</h3>
+      <img src="assets/image/portfolio/app-3.jpg" alt="DB_FARMERSCARE" class="project-img">
+      <p>Laravel-based farm management system to manage crops, sales, and farmer profiles.</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Product</h3>
+      <img src="assets/image/portfolio/product-2.jpg" alt="Responsive Blog" class="project-img" />
+      <p>A modern blog website with mobile-first design and interactive posts.</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>Books</h3>
+      <img src="assets/image/portfolio/books-1.jpg" alt="Portfolio Website" class="project-img" />
+      <p>My personal portfolio built with HTML, CSS, and JavaScript featuring animated waves and message box.</p>
+      <a href="#" class="project-btn">View Project</a>
+    </div>
+    <!-- repeat for other projects... -->
+  </div>
+</section>
+
+
+
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p class="contact-subtitle">Feel free to reach out by filling the form below.</p>
+  <form id="contactForm" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Dhvani Deshmukh. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
